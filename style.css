@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+}
+h1 {
+	text-align: center;
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+}
+h1#title {
+	color: cadetblue;
+	margin: 50px;
+}
+h1#large-title {
+	color: white;
+	background-color: cadetblue;
+	padding: 5px;
+	display: block;
+	width: 400px;
+	margin: 20px auto 130px;
+	font-size: 5rem;
+	font-family: Times;
+	text-shadow: 0 3px 0 black;
+}
+h2 {
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+#wrap {
+	background-color: orange;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px 10%;
+}
+#container {
+	background-color: azure;
+	margin: auto;
+	padding: 30px 10% 60px;
+}
+#block-holder {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+.block {
+	position: relative;
+	background-color: cadetblue;
+	padding: 20px;
+	cursor: pointer;
+	transition: background-color 0.5s, border-radius 0.5s cubic-bezier(.98,.63,.64,1.39);
+}
+h2 {
+	text-align: center;
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+}
+li {
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+}
+.block:hover {
+	background-color: mediumaquamarine;
+}
+.second {
+	position: relative;
+	top: 20px;
+}
+.third {
+	position: relative;
+	top: 40px;
+}
+.shift {
+	left: 20px;
+}
+.conn::after {
+	content: "";
+	position: absolute;
+	background-color: rgba(60,99,100,1.00);
+	top: 0;
+	left: -20px;
+	width: 20px;
+	height: 20px;
+}
+.socon::after {
+	content: "";
+	position: absolute;
+	background-color: cadetblue;
+	top: -10px;
+	right: calc(-100% - 40px);
+	width: calc(100% + 60px);
+	height: 20px;
+	border-radius: 10px 5px 10px 5px;
+}
+#three-facet-top::after {
+	top: 155px;
+}
+#three-facet-bottom:hover {
+	border-radius: 50px 0 50px 50px;
+}
+#two-facet-bottom:hover {
+	border-radius: 0 0 50px 50px;
+}
+#two-facet-right:hover {
+	border-radius: 0 50px 50px 0;
+}
+#two-facet-left:hover {
+	border-radius: 50px 0 0 50px;
+}
+#three-facet-top:hover {
+	border-radius: 50px 50px 50px 0;
+}
